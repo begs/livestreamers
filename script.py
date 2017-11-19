@@ -1,4 +1,4 @@
-import sys, json; 
+import sys, json, time; 
 
 data = json.load(sys.stdin); 
 num = data["_total"]; 
@@ -22,10 +22,10 @@ for i in range (0, num):
 		channelName = channelName + "\t"
 	if (len(channelGame) < 5):
 		channelGame = channelGame + "\t\t"
-	elif(len(channelGame) < 10):
-		channelGame = channelGame + "\t"
+	elif(len(channelGame) > 20):
+		channelGame = channelGame[:20] + "..."
 
-	print formatting.BOLD + channelName + "\t" + formatting.ENDC + channelGame + "\t" + formatting.OKGREEN + channelViewers + formatting.ENDC
+	print formatting.BOLD + channelName + "\t" + formatting.ENDC + channelGame + "\t\t" + formatting.OKGREEN + channelViewers + formatting.ENDC
 
 	if (i == num-1):
 		print "\n"
