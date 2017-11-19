@@ -1,7 +1,7 @@
-import sys, json, time; 
+import sys, json; 
 
 data = json.load(sys.stdin); 
-num = data["_total"]; 
+numStreams = data["_total"]; 
 
 #For prettier output formatting
 class formatting:
@@ -9,7 +9,7 @@ class formatting:
 	ENDC = "\033[0m"
 	OKGREEN = "\033[92m"
 
-for i in range (0, num): 
+for i in range (0, numStreams): 
 	if (i == 0):
 		print "\n"
 
@@ -20,12 +20,16 @@ for i in range (0, num):
 	#Attempt to get output properly tabulated
 	if (len(channelName) < 8):
 		channelName = channelName + "\t"
-	if (len(channelGame) < 5):
+
+	if(len(channelGame) < 5):
 		channelGame = channelGame + "\t\t"
-	elif(len(channelGame) > 20):
-		channelGame = channelGame[:20] + "..."
+	elif(len(channelGame) < 10 and len(channelGame) > 5):
+		channelGame = channelGame + "\t"
+	
+	if(len(channelGame) > 20):
+		channelGame = channelGame[:20] + ".."
 
-	print formatting.BOLD + channelName + "\t" + formatting.ENDC + channelGame + "\t\t" + formatting.OKGREEN + channelViewers + formatting.ENDC
+	print formatting.BOLD + channelName + "\t" + formatting.ENDC + channelGame + "\t" + formatting.OKGREEN + channelViewers + formatting.ENDC
 
-	if (i == num-1):
+	if (i == numStreams-1):
 		print "\n"
