@@ -21,6 +21,8 @@ for i in range (0, num):
 	if (len(channelName) < 8):
 		channelName = channelName + "\t"
 	if (len(channelGame) < 5):
+		channelGame = channelGame + "\t\t"
+	elif(len(channelGame) < 10):
 		channelGame = channelGame + "\t"
 
 	print formatting.BOLD + channelName + "\t" + formatting.ENDC + channelGame + "\t" + formatting.OKGREEN + channelViewers + formatting.ENDC
