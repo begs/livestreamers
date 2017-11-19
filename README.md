@@ -8,7 +8,7 @@ Then simply run the script. Example output:
 ![output](https://puu.sh/ypiYy/21abcfc047.png)
 
 
-For easier usage simply add a shortcut function in your ```.bash_profile```
+For easier usage (with bash) you can add a shortcut function in your ```.bash_profile```
 ```bash
 function live() {
   cd ~/livestreamers
