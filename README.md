@@ -12,5 +12,5 @@ For easier usage simply add it to a function in your ```bash_profile```
 function live() {
   cd ~/livestreamers
   . live.py
-    }
+}
 ```
