@@ -5,4 +5,4 @@ A simple python script that uses Twitch.tv API to check if a users followed chan
 Replace *** in ```live.py```with your [OAuth](https://twitchapps.com/tmi/). 
 
 Then simply run the script. Example output:
-![output](https://puu.sh/ypiXl/7c0a9e72a1.png)
+![output](https://puu.sh/ypiYy/21abcfc047.png)
