@@ -20,6 +20,8 @@ for i in range (0, numStreams):
 	#Attempt to get output properly tabulated
 	if (len(channelName) < 8):
 		channelName = channelName + "\t"
+	elif(len(channelName) > 12):
+		channelName = channelName[:12] + ".."
 
 	if(len(channelGame) < 5):
 		channelGame = channelGame + "\t\t"
