@@ -27,7 +27,7 @@ for i in range (0, numStreams):
 	elif(len(channelName) > 12):
 		channelName = channelName[:12] + ".."
 
-	if(len(channelGame) < 5):
+	if(len(channelGame) < 7):
 		channelGame = channelGame + "\t\t"
 	elif(len(channelGame) < 16 and len(channelGame) > 5):
 		channelGame = channelGame + "\t"
