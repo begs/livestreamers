@@ -1,5 +1,5 @@
 # livestreamers
-A simple script that uses Twitch.tv API to check if a user's followed channels are live.
+A python script that uses Twitch.tv API to check if a user's followed channels are live.
 
 ## Usage
 Replace *** in ```live.py``` with your [OAuth](https://twitchapps.com/tmi/). 
