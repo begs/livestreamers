@@ -31,8 +31,7 @@ for i in range (0, numStreams):
 		channelGame = channelGame + "\t\t"
 	elif(len(channelGame) < 16 and len(channelGame) > 5):
 		channelGame = channelGame + "\t"
-	
-	if(len(channelGame) > 20):
+	elif(len(channelGame) > 20):
 		channelGame = channelGame[:20] + ".."
 
 	#Check if stream is actually live or VodCast
