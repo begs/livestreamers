@@ -19,8 +19,8 @@ function live() {
 * You need a way to use bash in Windows. I use [Git Bash](https://git-scm.com/downloads) together with [ConEmu](https://conemu.github.io/).
 * Clone livestreamers ```git clone https://github.com/begs/livestreamers.git```.
 * If not installed - download [Python](https://www.python.org/download/releases/2.7/).
-* Add Python to PATH. 
-	* System -> Advanced settings -> Environment variables -> Path -> Edit -> Add ```c:\Python27```
+	* Add Python to PATH. 
+		* System -> Advanced settings -> Environment variables -> Path -> Edit -> Add ```c:\Python27```
 * I use [Streamlink](https://github.com/streamlink/streamlink/releases) and [VLC](https://www.videolan.org/vlc/download-windows.nb.html) to open streams from terminal.
 * For easier usage, create and edit bashrc ```touch .bashrc```, ```nano .bashrc```:
 ```bash
