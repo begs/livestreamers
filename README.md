@@ -20,5 +20,17 @@ function live() {
 * Clone livestreamers ```git clone https://github.com/begs/livestreamers.git```.
 * If not installed - download [Python](https://www.python.org/download/releases/2.7/).
 * Might be necessary to add Python to path. ```PATH=$PATH:/c/Python27/```
-* If you want an alias for the script: make a bash profile file in Windows - ```touch .bashrc```, and add the ```live``` function from above.
 * I use [Streamlink](https://github.com/streamlink/streamlink/releases) and [VLC](https://www.videolan.org/vlc/download-windows.nb.html) to open streams from terminal.
+* For easier usage, create and edit bashrc ```touch .bashrc```, ```nano .bashrc```:
+```bash
+#Easier way to launch streamlink
+function twitch() {
+    streamlink twitch.tv/$1 best
+}
+#Runs livestreamers script
+function live() {
+	cd ~/livestreamers
+	. live.py
+	cd ..
+}
+```
