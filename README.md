@@ -22,7 +22,7 @@ function live() {
 	* Add Python to PATH. 
 		* System -> Advanced settings -> Environment variables -> Path -> Edit -> Add ```c:\Python27```
 * I use [Streamlink](https://github.com/streamlink/streamlink/releases) and [VLC](https://www.videolan.org/vlc/download-windows.nb.html) to open streams from terminal.
-* For easier usage, create and edit bashrc ```touch .bashrc```, ```nano .bashrc```:
+* For easier usage, create and edit bashrc ```touch ~/.bashrc```, ```nano ~/.bashrc```:
 ```bash
 #Easier way to launch streamlink
 function twitch() {
