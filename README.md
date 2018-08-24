@@ -15,9 +15,11 @@ function live() {
   . live.py
 }
 ```
+## Installation
+* Clone ```git clone https://github.com/begs/livestreamers.git``` or [download](https://github.com/begs/livestreamers/archive/master.zip) livestreamers
+
 ## Step-by-step for Windows usage
 * You need a way to use bash in Windows. I use [Git Bash](https://git-scm.com/downloads) together with [ConEmu](https://conemu.github.io/).
-* Clone livestreamers ```git clone https://github.com/begs/livestreamers.git```.
 * If not installed - download [Python](https://www.python.org/download/releases/2.7/).
 	* Add Python to PATH. 
 		* System -> Advanced settings -> Environment variables -> Path -> Edit -> Add ```c:\Python27```
