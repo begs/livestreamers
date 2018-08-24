@@ -1,6 +1,9 @@
 # livestreamers
 A python script that uses Twitch.tv API to check if a user's followed channels are live.
 
+## Installation
+* Clone ```git clone https://github.com/begs/livestreamers.git``` or [download](https://github.com/begs/livestreamers/archive/master.zip) livestreamers
+
 ## Usage
 Replace ```***``` in ```live.py``` with your [OAuth](https://twitchapps.com/tmi/). You want the string *after* "oauth:". 
 
@@ -15,8 +18,6 @@ function live() {
   . live.py
 }
 ```
-## Installation
-* Clone ```git clone https://github.com/begs/livestreamers.git``` or [download](https://github.com/begs/livestreamers/archive/master.zip) livestreamers
 
 ## Step-by-step for Windows usage
 * You need a way to use bash in Windows. I use [Git Bash](https://git-scm.com/downloads) together with [ConEmu](https://conemu.github.io/).
