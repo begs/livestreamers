@@ -1,7 +1,7 @@
 import sys, json; 
 
-data = json.load(sys.stdin); 
-numStreams = data["_total"]; 
+#Load the stream info
+data = json.load(sys.stdin);
 
 #For prettier output formatting
 class formatting:
@@ -11,7 +11,13 @@ class formatting:
 	RED = "\033[91m"
 	DEFAULT = "\033[99m"
 
-
+#Try to get stream info from json. Gives KeyError if the OAuth fails         
+try:                                                                         
+    numStreams = data["_total"];                                             
+except KeyError:                                                             
+    print formatting.RED + "KeyError - make sure your OAuth is formatted correctly in live.py." + formatting.ENDC
+    sys.exit(1)                                                              
+                                                                             
 for i in range (0, numStreams): 
 	if (i == 0):
 		print "\n"
