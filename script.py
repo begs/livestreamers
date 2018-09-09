@@ -1,4 +1,6 @@
-import sys, json; 
+import sys, json;
+reload(sys)
+sys.setdefaultencoding('utf8')
 
 #Load the stream info
 data = json.load(sys.stdin);
@@ -46,7 +48,7 @@ for i in range (0, numStreams):
 	else:
 		streamType = "(vodcast)";
 
-	print formatting.BOLD + channelName + "\t" + formatting.ENDC + channelGame.encode('utf8') + "\t" + formatting.OKGREEN + channelViewers + formatting.RED + "\t" + streamType + formatting.ENDC
+	print formatting.BOLD + channelName + "\t" + formatting.ENDC + channelGame + "\t" + formatting.OKGREEN + channelViewers + formatting.RED + "\t" + streamType + formatting.ENDC
 
 	if (i == numStreams-1):
 		print "\n"
