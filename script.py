@@ -1,7 +1,7 @@
 import sys, json; 
-
+reload(sys)
+sys.setdefaultencoding('utf8')
 data = json.load(sys.stdin); 
-numStreams = data["_total"]; 
 
 #For prettier output formatting
 class formatting:
@@ -9,9 +9,14 @@ class formatting:
 	ENDC = "\033[0m"
 	OKGREEN = "\033[92m"
 	RED = "\033[91m"
-	DEFAULT = "\033[99m"
 
-
+#Try to get stream info from json. Gives KeyError if the OAuth fails         
+try:                                                                         
+    numStreams = data["_total"];                                             
+except KeyError:                                                             
+    print formatting.RED + "KeyError - make sure your OAuth is formatted correctly in live.py" + formatting.ENDC
+    sys.exit(1)                                                              
+               
 print "\nCHANNEL " + ' '*13 + "GAME" + ' '*37 + "VIEWERS" + ' '*10 + "\n" + '-'*82
 
 for i in range (0, numStreams): 
