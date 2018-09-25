@@ -9,7 +9,7 @@ Replace ```***``` in ```live.py``` with your Twitch.tv [OAuth](https://twitchapp
 
 Then simply run the ```live.py``` script. Example output:
 
-![output](https://i.imgur.com/S6Fb0mS.gif)
+![output](https://thumbs.gfycat.com/WatchfulTepidAdamsstaghornedbeetle-size_restricted.gif)
 
 
 For easier usage you can add an alias in your ```.bash_profile```:
