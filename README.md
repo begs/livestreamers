@@ -8,7 +8,7 @@ A python script that uses Twitch.tv API to check if a user's followed channels a
 Replace ```***``` in ```live.py``` with your Twitch.tv [OAuth](https://twitchapps.com/tmi/). You want the string *after* "oauth:". 
 
 Then simply run the ```live.py``` script. Example output:
-![output](demo.gif)
+![output](https://i.imgur.com/S6Fb0mS.gif)
 
 
 For easier usage you can add an alias in your ```.bash_profile```:
