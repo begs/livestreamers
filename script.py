@@ -27,7 +27,7 @@ for i in range (0, numStreams):
 
 	#Check if stream is actually live or VodCast
 	if(streamType == "live"):
-		streamType = "(vodcast)";
+		streamType = "";
 	else:
 		streamType = "(vodcast)";
 
