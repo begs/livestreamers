@@ -17,7 +17,7 @@ except KeyError:
     print formatting.RED + "KeyError - make sure your OAuth is formatted correctly in live.py" + formatting.ENDC
     sys.exit(1)                                                              
                
-print "\nCHANNEL " + ' '*13 + "GAME" + ' '*37 + "VIEWERS" + ' '*10 + "\n" + '-'*82
+print "\nCHANNEL " + ' '*13 + "GAME" + ' '*37 + "VIEWERS" + ' '*8 + "\n" + '-'*80
 
 for i in range (0, numStreams): 
 	channelName = data["streams"][i]["channel"]["name"];
@@ -27,7 +27,7 @@ for i in range (0, numStreams):
 
 	#Check if stream is actually live or VodCast
 	if(streamType == "live"):
-		streamType = "";
+		streamType = "(vodcast)";
 	else:
 		streamType = "(vodcast)";
 
@@ -42,9 +42,9 @@ for i in range (0, numStreams):
 	print "{} {} {} {}".format(
 		formatting.HEADER + channelName.ljust(20) + formatting.ENDC,
 		channelGame.ljust(40), 
-		formatting.OKGREEN + channelViewers.ljust(10), 
+		formatting.OKGREEN + channelViewers.ljust(8), 
 		formatting.RED + streamType + formatting.ENDC
 		)
 
 	if (i == numStreams-1):
-		print '-'*82
+		print '-'*80
