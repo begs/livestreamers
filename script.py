@@ -16,11 +16,12 @@ class formatting:
 	RED = "\033[91m"
 
 #Try to get stream info from json. Gives KeyError if the OAuth fails         
+#Count number of live streams
 try:                                                                         
-    numStreams = data["_total"];                                             
+	numStreams = len(data['streams'])                                             
 except KeyError:                                                             
-    print (formatting.RED + "KeyError - make sure your OAuth is formatted correctly in live.py" + formatting.ENDC)
-    sys.exit(1)                                                              
+    	print (formatting.RED + "KeyError - make sure your OAuth is formatted correctly in live.py" + formatting.ENDC)
+    	sys.exit(1)                                                              
                
 print ("\nCHANNEL " + ' '*13 + "GAME" + ' '*37 + "VIEWERS" + ' '*8 + "\n" + '-'*80)
 
