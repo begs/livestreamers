@@ -1,5 +1,5 @@
 # livestreamers
-A python script that uses Twitch.tv API to check if a user's followed channels are live.
+A shell/python script that uses Twitch.tv API to check if a user's followed channels are live.
 
 ## Installation
 * Clone ```git clone https://github.com/begs/livestreamers.git``` or [download](https://github.com/begs/livestreamers/archive/master.zip) the repository.
