@@ -13,4 +13,4 @@ or ```python -m pip install requests```
 Replace ```***``` in ```live.py``` with your Twitch.tv [OAuth](https://twitchapps.com/tmi/). You want the string *after* "oauth:". 
 
 Then simply run the ```live.py``` script. Example output:
-![output](https://thumbs.gfycat.com/WatchfulTepidAdamsstaghornedbeetle-size_restricted.gif)
+![output](https://i.imgur.com/0Cb48t8.gif)
