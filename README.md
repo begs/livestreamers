@@ -14,4 +14,5 @@ The first time you run the script, it will prompt for your [OAuth](https://twitc
 This is stored in "oauth.txt", in the same path as you run your script.
 
 Example output:
+
 ![output](https://i.imgur.com/0Cb48t8.gif)
