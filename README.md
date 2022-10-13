@@ -10,8 +10,11 @@ The script uses the 'requests' package in Python:
 or ```python -m pip install requests```
 
 ## Usage
-The first time you run the script, it will prompt for your [OAuth](https://twitchapps.com/tmi/). You want the string *after* "oauth:".  
-This is stored in "oauth.txt", in the same path as you run your script.
+The Twitch API now requires that the client ID is associated with the OAuth access token. You can generate these [here](https://twitchtokengenerator.com/) for example. This script requires adding ```user:read:follows``` to the scope.
+
+You will also need your user ID. This can be found [here](https://www.streamweasels.com/tools/convert-twitch-username-to-user-id/).
+
+The script will prompt you for these and store them in ```config.ini```.
 
 Example output:  
 ![output](https://i.imgur.com/0Cb48t8.gif)
