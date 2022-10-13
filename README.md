@@ -10,7 +10,8 @@ The script uses the 'requests' package in Python:
 or ```python -m pip install requests```
 
 ## Usage
-The Twitch API now requires that the client ID is associated with the OAuth access token. You can generate these [here](https://twitchtokengenerator.com/) for example. This script requires adding ```user:read:follows``` to the scope.
+The Twitch API now requires that the client ID is associated with the OAuth access token. 
+You can generate these [here](https://twitchtokengenerator.com/) for example. This script requires adding ```user:read:follows``` to the scope.
 
 You will also need your user ID. This can be found [here](https://www.streamweasels.com/tools/convert-twitch-username-to-user-id/).
 
